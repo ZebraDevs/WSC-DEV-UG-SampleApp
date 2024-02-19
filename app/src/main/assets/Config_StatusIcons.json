@@ -18,16 +18,16 @@
                 "valueString": "1"
             }, {
                 "key": "sipStatusIcon",
-                "valueString": "1"
+                "valueString": "2"
             }, {
                 "key": "batteryStatusIcon",
-                "valueString": "1"
+                "valueString": "2"
             }, {
                 "key": "cellularStatusIcon",
-                "valueString": "1"
+                "valueString": "2"
             }, {
                 "key": "wiFiStatusIcon",
-                "valueString": "1"
+                "valueString": "2"
             }, {
                 "key": "bluetoothStatusIcon",
                 "valueString": "1"

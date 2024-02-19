@@ -97,6 +97,16 @@
         android:onClick="onClickbtn_OperatorTwo"
         android:text="Setting Desktop Shortcuts at runtime (#2)" />
 
+    <Button
+        android:id="@+id/btn_DesktopShortcutThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="0.5"
+        android:onClick="onClickbtn_OperatorThree"
+        android:text="Setting Applied via SSM (#3)" />
+
 
 </LinearLayout>
 </ScrollView>

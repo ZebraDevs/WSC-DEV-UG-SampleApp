@@ -3,9 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="com.zebra.workstationconnect.ACCESS_CONFIGURATION_SERVICE" />
+    <uses-permission android:name="com.zebra.securestoragemanager.securecontentprovider.PERMISSION.WRITE"/>
+    <uses-permission android:name="com.zebra.securestoragemanager.securecontentprovider.PERMISSION.READ"/>
+
 
     <queries>
         <package android:name="com.zebra.workstationconnect.release" />
+
+        <provider android:authorities="com.zebra.securestoragemanager.securecontentprovider"/>
+        <package android:name="com.zebra.securestoragemanager" />
     </queries>
 
 

@@ -9,11 +9,12 @@
         "valueBundle": {
             "managedProperty": [{
                 "key": "AllAppsButton",
-                "valueString": "1"
+                "valueString": "2"
             }, {
                 "key": "DisplayMobileApps",
-                "valueString": "1"
-            }]
+                "valueString": "2"
+            }
+            ]
         }
     }]
 }
