@@ -162,21 +162,25 @@ public class MainActivity extends AppCompatActivity {
             String DISPMETRICS_H_PIXEL= ""+metrics.heightPixels;
             String DISPMETRICS_W_PIXEL= ""+metrics.widthPixels;
 
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-                _sb.append( _d.getDeviceProductInfo().getProductId()+"\n" ) ;
-                String PROD_ID=_d.getDeviceProductInfo().getProductId();
-                String PROD_INFO=_d.getDeviceProductInfo().getName();
-                String PROD_MANUF_PNPID=_d.getDeviceProductInfo().getManufacturerPnpId();
-                String PROD_SINKTYPE=""+_d.getDeviceProductInfo().getConnectionToSinkType();
-                String PROD_YEARWEEK=""+_d.getDeviceProductInfo().getManufactureYear()+"-"+_d.getDeviceProductInfo().getManufactureWeek();
-                String PROD_MODELYEAR=""+_d.getDeviceProductInfo().getModelYear();
-                _sb.append( "NAME="+_d.getName()+" " ) ;
-                _sb.append( "PROD_ID="+ PROD_ID +" " ) ;
-                _sb.append( "PROD_INFO="+ PROD_INFO +" " ) ;
-                _sb.append( "PROD_MANUF_PNPID="+ PROD_MANUF_PNPID +" " ) ;
-                _sb.append( "PROD_SINKTYPE="+ PROD_SINKTYPE +" " ) ;
-                _sb.append( "PROD_YEARWEEK="+ PROD_YEARWEEK +" " ) ;
-                _sb.append( "PROD_MODELYEAR="+ PROD_MODELYEAR +" " ) ;
+            try {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                    _sb.append( _d.getDeviceProductInfo().getProductId()+"\n" ) ;
+                    String PROD_ID=_d.getDeviceProductInfo().getProductId();
+                    String PROD_INFO=_d.getDeviceProductInfo().getName();
+                    String PROD_MANUF_PNPID=_d.getDeviceProductInfo().getManufacturerPnpId();
+                    String PROD_SINKTYPE=""+_d.getDeviceProductInfo().getConnectionToSinkType();
+                    String PROD_YEARWEEK=""+_d.getDeviceProductInfo().getManufactureYear()+"-"+_d.getDeviceProductInfo().getManufactureWeek();
+                    String PROD_MODELYEAR=""+_d.getDeviceProductInfo().getModelYear();
+                    _sb.append( "NAME="+_d.getName()+" " ) ;
+                    _sb.append( "PROD_ID="+ PROD_ID +" " ) ;
+                    _sb.append( "PROD_INFO="+ PROD_INFO +" " ) ;
+                    _sb.append( "PROD_MANUF_PNPID="+ PROD_MANUF_PNPID +" " ) ;
+                    _sb.append( "PROD_SINKTYPE="+ PROD_SINKTYPE +" " ) ;
+                    _sb.append( "PROD_YEARWEEK="+ PROD_YEARWEEK +" " ) ;
+                    _sb.append( "PROD_MODELYEAR="+ PROD_MODELYEAR +" " ) ;
+                }
+            } catch (Exception e) {
+                _sb.append( "NO PRODUCT INFO AVAILABLE.") ;
             }
             _sb.append("\n");
 

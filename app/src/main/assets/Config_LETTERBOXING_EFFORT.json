@@ -1,0 +1,30 @@
+{
+    "kind": "androidenterprise#managedConfiguration",
+    "productId": "com.zebra.oemconfig.common",
+    "managedProperty": [
+        {
+            "key": "resetConfiguration",
+            "valueString": "1"
+        }
+    ,
+        {
+            "key": "configurationMode",
+            "valueString": "Immediately"
+        }
+    ,
+        {
+            "key": "resolutionAndSizeMode",
+            "valueString": "1"
+        }    ,
+        {
+            "key": "desktopResolution",
+            "valueString": "1920,1080,200,10"
+        }    ,
+        {
+            "key": "desktopOrientation",
+            "valueString": "1"
+        }
+
+
+    ]
+}

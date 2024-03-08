@@ -31,6 +31,8 @@ import java.nio.charset.StandardCharsets;
 
 import com.zebra.valueadd.IZVAService;
 
+
+//HAD TO SET org.gradle.jvmargs=-Xmx8G TO BUILD....
 public class HDLauncherActivity extends AppCompatActivity  implements ServiceConnection {
 
     Intent starterIntent;
@@ -95,9 +97,8 @@ public class HDLauncherActivity extends AppCompatActivity  implements ServiceCon
         callProcessZVA("Config_MANAGER.json");
     }
 
-    public void onClickbtn_OperatorTwo(View v) {
-        callProcessZVA("Config_DIMENSIONING.json");
-    }
+    public void onClickbtn_OperatorTwo(View v) {callProcessZVA("Config_DIMENSIONING.json");}
+    //public void onClickbtn_OperatorTwo(View v) {callProcessZVA("Config_LETTERBOXING_EFFORT.json");}
 
     public void onClickbtn_OperatorThree(View v) {
         sendWSCConfigViaSSM();
